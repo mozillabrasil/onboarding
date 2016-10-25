@@ -1,23 +1,24 @@
-This page is specifically about [https://github.com/mozilla the "mozilla" organization on github]. There are several other github organizations you may be interested in, cf. the incomplete list [[#other_github|below]].
+Esta página é especifica sobre [https://github.com/mozilla a organização "mozilla" no github]. Existem outras muitas organizações no github que você pode se interessar, cf. a lista incompleta [[#other_github|below]].
 <div id="contact">
 {| class="wikitable"
 |-
-! [[File:Red_question_mark.png|144px|Send us an email!|link=]] Got a question?
+! [[File:Red_question_mark.png|144px|Envie-nos um e-mail !|link=]] Dúvida?
 |-
 | Email {{emailentry|github-owners|mozilla.org|at=is}} <br />
-Bugzilla [https://bugzilla.mozilla.org/enter_bug.cgi?comment=I%27ve%20read%20https%3A%2F%2Fwiki.mozilla.org%2FGithub%2C%20and%20need%20help%20with%20the%20following.%0D%0A%0D%0A&component=Github%3A%20Administration&form_name=enter_bug&product=mozilla.org& mozilla.org :: Github: Administration] <br />
+Bugzilla [https://bugzilla.mozilla.org/enter_bug.cgi?comment=I%27ve%20read%20https%3A%2F%2Fwiki.mozilla.org%2FGithub%2C%20and%20need%20help%20with%20the%20following.%0D%0A%0D%0A&component=Github%3A%20Administration&form_name=enter_bug&product=mozilla.org& mozilla.org :: Github: Administração] <br />
 irc #github on [[IRC|moznet]]
 |}
 
-== News ==
-* As of June 20, 2016, all members [https://groups.google.com/forum/#!topic/mozilla.dev.platform/UmHOOh3qtiM must have 2FA enabled]. You have been notified if this impacts you.
+== Notícias ==
+* A partir de 20 de junho de 2016, todos os membros [https://groups.google.com/forum/#!topic/mozilla.dev.platform/UmHOOh3qtiM devem ter habilitado 2FA] Você será notificado se impacta você.
 
-== Recommendations and FAQ ==
+== Recomendações e FAQ ==
 
-=== Where should I ask additional questions? ===
-* Send an email to '''{{emailentry|github-owners|mozilla.org|at=is}}''' and we'll respond right away! We're also available on #github on irc.
+=== Onde eu posso realizar mais perguntas? ===
+* Envie um email para '''{{emailentry|github-owners|mozilla.org|at=is}}''' e nós responderemos imediatamente! Nós também estamos no canal #github no IRC.
 
-=== How do I hook up a new 3rd party application to a repository in the mozilla org? ===
+=== Como eu posso enviar um novo aplicativo para um repositório da org. mozilla? ===
+
 3rd party applications can easily impact many other repositories than the initial one. For that reason, the following steps are strongly encouraged:
 # Create yourself a new github user for this repository.
 # Make them an admin of the repository(s) temporarily.
