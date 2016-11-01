@@ -1,4 +1,4 @@
-Esta página é especifica sobre [https://github.com/mozilla a organização "mozilla" no github]. Existem outras muitas organizações no github que você pode se interessar, cf. a lista incompleta [[#other_github|below]].
+Esta página é especifica sobre [https://github.com/mozilla a organização "mozilla" no GitHub]. Existem outras muitas organizações no GitHub que você pode se interessar, cf. a lista incompleta [[#other_github|below]].
 <div id="contact">
 {| class="wikitable"
 |-
@@ -20,42 +20,43 @@ irc #github on [[IRC|moznet]]
 === Como eu posso enviar um novo aplicativo para um repositório da org. mozilla? ===
 
 3rd party applications can easily impact many other repositories than the initial one. For that reason, the following steps are strongly encouraged:
-# Create yourself a new github user for this repository.
-# Make them an admin of the repository(s) temporarily.
-# Sign in as the new github user and setup the 3rd party application.
-# Log back into your normal account.
-# Try to reduce access of that user from an admin of the repository(s) to read only access.
-# If (5) doesn't work, at least the 3rd party application will not have access to all of your normal github account's (including private repositories).
+Desenvolvedoras de aplicativos podem facilmente impactar muitos outros repositórios além do inicial. Por estas razões, os seguintes passos são fortemente encorajados:
+# Crie você mesmo um novo usuário no GitHub para este repositório.
+# Faça deste usuário o administrador do repositório (ou repositórios) temporariamente.
+# Se autentique com o novo usuário do GitHub e configure a aplicação do terceiro.
+# Volte e se autentique com seu usuário normal.
+# Tente reduzir o acesso daquele usuário administrador do repositório para acesso somente de leitura.
+# Se passo (5) não funcionar, pelo menos a aplicação do terceiro não terá acesso as contas de usuários normais (incluindo repositórios privados).
 
-* Authorizing an application to work with GitHub utilizes the permissions your account has -- so, any repositories you have access to the application will have access to as well (including private ones).  If you want to grant access to an application that no one else has used with the Mozilla organization yet you'll see a "Request access" button during the set up flow.  You'll need to click that button to request approval.  See below for an example:
+* Autorizar uma aplicação para trabalhar com GitHub utiliza as permissões que sua conte tem -- então, qualquer repositório que você tenha acesso a aplicação também terá acesso (incluindo acesso privado). Se você quer permitir acesso para uma aplicação que ninguém na organização Mozilla tenha utilizado, você verá um botão para "Requisitar acesso" durante o fluxo de configuração. Você precisará clicar naquele botão para requisitar aprovação. Veja abaixo um exemplo:
 
 [[File:github_approval.png]]
 
-* In some cases, the application does not need to be "approved" to function correctly, as it has read only access to any public repository. (Some applications only want write access to help you configure the application first time.)
+* Em alguns casos, a aplicação não necessitará de aprovação para funcionar corretamente, como ela tem acesso de leitura a qualquer repositório público. (Algumas aplicações só querem ter acesso de escrita para ajudá-lo a configurar a aplicação na primeira vez.)
 
-* In other cases, the application does need write permission, and/or permission to read a private repository. In these cases, it is helpful to send the details to the owner's team, either by [https://bugzilla.mozilla.org/enter_bug.cgi?comment=I%27ve%20read%20https%3A%2F%2Fwiki.mozilla.org%2FGithub%2C%20and%20need%20help%20with%20the%20following.%0D%0A%0D%0A&component=Github%3A%20Administration&form_name=enter_bug&product=mozilla.org& opening a bug] or [[#contact|email]].
+* Em outros casos, a aplicação necessitará de permissão de escrita, e/ou permissão de leitura em repositório privado. Nesses casos, é conveniente enviar os detalhes para o responsável da equipe, seja por [https://bugzilla.mozilla.org/enter_bug.cgi?comment=I%27ve%20read%20https%3A%2F%2Fwiki.mozilla.org%2FGithub%2C%20and%20need%20help%20with%20the%20following.%0D%0A%0D%0A&component=Github%3A%20Administration&form_name=enter_bug&product=mozilla.org& reportando um bug] ou [[#contact|email]].
 
-=== Reviewing owners and permissions ===
-As an owner or repository admin you're responsible for maintaining the list of people with access to your projects.  Please be active and prudent about maintaining this list.
+=== Revisando responsáveis e permissões ===
+Como um criador ou um administrador de repositório você é responsável por manter a lista de pessoas com acesso ao seu projeto. Por favor seja ativo e prudente enquanto mantém a lista.
 
-=== Can I be an Owner of the Mozilla Organization? ===
-The Owners group on github has complete administrative power and will be limited to a minimal number of people and reviewed regularly.  If a person is an owner they are expected to actively participate in the group and assist others as requested.  Owners will be added as a need arises (for example, support in another timezone) as determined by the current owners.
+=== Posso ser um responsável da Organização Mozilla? ===
+Os responsáveis por grupos no GitHub tem total poder administrativo e serão limitados a um pequeno grupo de pessoas e revisores regularmente. Se uma pessoa é responsável espera-se participação ativa no grupo e suporte aos outros quando requisitado. Outros responsáveis serão adicionados quando surgir a necessidade (por exemplo, suporte em outro fuso horário) conforme determinado pelos atuais responsáveis.
 
-All owners '''must''' have 2FA enabled for their GitHub login. (Everyone else ''should''.)
+Todos os responsáveis '''deverão''' ter ativo 2FA para suas credenciais no GitHub. (Todo mundo ''deveria''.)
 
 === Can I be a Member of the Mozilla Organization? ===
-With recent github enhancements (2015), we encourage the following (rough) guidelines, which strongly prefers using github teams. As a reminder, all members of the [https://github.com/mozilla/ Mozilla organization on github] agree to be bound by [https://www.mozilla.org/en-US/about/governance/policies/commit/requirements/ Mozilla's Commit Access Requirements], and should follow the intent of the [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Mozilla's Commit Access Policy] as much as practical.
-* "Outside Collaborator": repository admins can grant outside collaborator to any github account. "Outside Collaborator" is roughly analogous to "Level 1a" access to Mozilla hosted repositories.
-* "Team Member": team maintainers can add github users to a team, if they are already a member of the organization. If you are not yet a member of the organization, the team maintainer should [[#contact|request your addition]] to their team, as a form of vouching. "Team Member" is roughly analogous to "Level 2" or "Level 3", with the distinction being the content of the repositories managed by the team.
+With recent GitHub enhancements (2015), we encourage the following (rough) guidelines, which strongly prefers using github teams. As a reminder, all members of the [https://github.com/mozilla/ Mozilla organization on github] agree to be bound by [https://www.mozilla.org/en-US/about/governance/policies/commit/requirements/ Mozilla's Commit Access Requirements], and should follow the intent of the [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Mozilla's Commit Access Policy] as much as practical.
+* "Outside Collaborator": repository admins can grant outside collaborator to any GitHub account. "Outside Collaborator" is roughly analogous to "Level 1a" access to Mozilla hosted repositories.
+* "Team Member": team maintainers can add GitHub users to a team, if they are already a member of the organization. If you are not yet a member of the organization, the team maintainer should [[#contact|request your addition]] to their team, as a form of vouching. "Team Member" is roughly analogous to "Level 2" or "Level 3", with the distinction being the content of the repositories managed by the team.
 
-{{note| As of June 30, 2016, all members of the Mozilla organization on github '''MUST''' have [https://help.github.com/articles/about-two-factor-authentication/ 2FA enabled].|reminder}}
+{{note| As of June 30, 2016, all members of the Mozilla organization on GitHub '''MUST''' have [https://help.github.com/articles/about-two-factor-authentication/ 2FA enabled].|reminder}}
 
 {{note| Automation accounts are also required to have 2FA enabled. Scripts should use [https://help.github.com/articles/creating-an-access-token-for-command-line-use/ access tokens] with minimum permissions to accomplish the task.}}
 
 
-Some people are interested in being members of the Mozilla organization on github as a way to highlight their contributions to the Mozilla Project. Thanks for your help! And there is a [https://www.mozilla.org/credits/ better place] to highlight your work. Please refer to the [https://www.mozilla.org/credits/FAQ FAQ] for that process.
+Some people are interested in being members of the Mozilla organization on GitHub as a way to highlight their contributions to the Mozilla Project. Thanks for your help! And there is a [https://www.mozilla.org/credits/ better place] to highlight your work. Please refer to the [https://www.mozilla.org/credits/FAQ FAQ] for that process.
 
-=== Should I make a separate github organization or just create a repository in an existing one? ===
+=== Should I make a separate GitHub organization or just create a repository in an existing one? ===
 This is a personal preference.  If you have a large enough project or organization feel free.  We suggest you use the strategies and recommendations here as a model to manage the details.
 
 === Forking vs Transferring ===
@@ -69,7 +70,7 @@ If you have created a repo on your own account (for example, myuser/myrepo) and 
 # Under the repo admin, transfer ownership to the Mozilla organization. If you don't see this option, return to step 1.
 # Choose which teams should be given access. All chosen teams will have only 'read' access at this point.
 # Ask an [[#contact|org admin]] to grant team permissions higher than read ('write' and 'admin' are the other choices). (Team maintainers do not have the ability to change a repositories status.)
-# Fork the repo from Mozilla (mozilla/myrepo) back to your account (recreating myuser/myrepo). While the transferred repo becomes the root of the network on Github (e.g. all forks are now forks of mozilla/myrepo) other users may be pointing to your repo by URL. (Optional, github will redirect old URLs for transfers, but you probably want a local repo if you use the PR workflow.)
+# Fork the repo from Mozilla (mozilla/myrepo) back to your account (recreating myuser/myrepo). While the transferred repo becomes the root of the network on GitHub (e.g. all forks are now forks of mozilla/myrepo) other users may be pointing to your repo by URL. (Optional, github will redirect old URLs for transfers, but you probably want a local repo if you use the PR workflow.)
 
 === Do I need to be an owner to create repositories? ===
 No.  If a person has read/write access to another repository in that organization they can make more repositories in that organization. However, it's preferred that you create repositories in the context of a team.
@@ -80,8 +81,8 @@ No.  When requirements were proposed they all seemed too rigid and time consumin
 On large teams we recommend you separate teams for read/write and repository administration.
 
 <div id="other_github"></div>
-=== Is "mozilla" the only github "organization" related to Mozilla? ===
-No, there are plenty of Mozilla-related "organizations" on github. As a rule of thumb, initiatives that create a large number of sub-repositories will create their own "organization". Here is a (probably incomplete) list of them:
+=== Is "mozilla" the only GitHub "organization" related to Mozilla? ===
+No, there are plenty of Mozilla-related "organizations" on GitHub. As a rule of thumb, initiatives that create a large number of sub-repositories will create their own "organization". Here is a (probably incomplete) list of them:
 {| class="wikitable sortable"
 |-
 ! Organization !! Description !! Contact Owner
