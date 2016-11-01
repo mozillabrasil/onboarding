@@ -19,7 +19,6 @@ irc #github on [[IRC|moznet]]
 
 === Como eu posso enviar um novo aplicativo para um repositório da org. mozilla? ===
 
-3rd party applications can easily impact many other repositories than the initial one. For that reason, the following steps are strongly encouraged:
 Desenvolvedoras de aplicativos podem facilmente impactar muitos outros repositórios além do inicial. Por estas razões, os seguintes passos são fortemente encorajados:
 # Crie você mesmo um novo usuário no GitHub para este repositório.
 # Faça deste usuário o administrador do repositório (ou repositórios) temporariamente.
