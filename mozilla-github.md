@@ -43,52 +43,52 @@ Os responsáveis por grupos no GitHub tem total poder administrativo e serão li
 
 Todos os responsáveis '''deverão''' ter ativo 2FA para suas credenciais no GitHub. (Todo mundo ''deveria''.)
 
-=== Can I be a Member of the Mozilla Organization? ===
-With recent GitHub enhancements (2015), we encourage the following (rough) guidelines, which strongly prefers using github teams. As a reminder, all members of the [https://github.com/mozilla/ Mozilla organization on github] agree to be bound by [https://www.mozilla.org/en-US/about/governance/policies/commit/requirements/ Mozilla's Commit Access Requirements], and should follow the intent of the [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Mozilla's Commit Access Policy] as much as practical.
-* "Outside Collaborator": repository admins can grant outside collaborator to any GitHub account. "Outside Collaborator" is roughly analogous to "Level 1a" access to Mozilla hosted repositories.
-* "Team Member": team maintainers can add GitHub users to a team, if they are already a member of the organization. If you are not yet a member of the organization, the team maintainer should [[#contact|request your addition]] to their team, as a form of vouching. "Team Member" is roughly analogous to "Level 2" or "Level 3", with the distinction being the content of the repositories managed by the team.
+=== Posso ser um membro da Organização Mozilla? ===
+Com as melhorias recentes do GitHub (2015), nós encorajamos (fortemente) seguir as diretrizes, que recomenda a criação de equipes no GitHub. Lembrando que, todos os membros da [https://github.com/mozilla/ Organização Mozilla no GitHub] concordam em serem vinculados ao [https://www.mozilla.org/en-US/about/governance/policies/commit/requirements/ Requisitos de Acesso para Submissão da Mozilla], como prática.
+* "Colaborador externo": administradores do respositório podem conceder acesso para qualquer usuário que possua uma conta no GitHub como colaboradore externo. "Colaboradores externos" são análogos ao "Nível 1a" de acesso aos repositórios hospedados pela Mozilla.
+* "Membros da equipe": Mantenedores de equipes podem adicionar usuários do GitHub a uma equipe, se eles já forem membros da organização. Se você ainda não é um membro da organização, o administrador da equipe deve [[#contact|requerer sua adição]] a sua equipe, como um atestado. "Membros de equipe" são análogos ao "Nível 2" ou "Nível 3", com a diferença sendo o repositório gerenciado pela equipe.
+{{note| A partir de 30 de Junho de 2016, todos os membros da Organização Mozilla no GitHub '''DEVEM''' ter [https://help.github.com/articles/about-two-factor-authentication/ 2FA ativo].|lembrete}}
 
-{{note| As of June 30, 2016, all members of the Mozilla organization on GitHub '''MUST''' have [https://help.github.com/articles/about-two-factor-authentication/ 2FA enabled].|reminder}}
-
-{{note| Automation accounts are also required to have 2FA enabled. Scripts should use [https://help.github.com/articles/creating-an-access-token-for-command-line-use/ access tokens] with minimum permissions to accomplish the task.}}
+{{note| Contas para automação também devem ter 2FA ativo. Scripts devem utilizar [https://help.github.com/articles/creating-an-access-token-for-command-line-use/ tokens de acesso] com permissões mínimas somente para execução da tarefa.}}
 
 
-Some people are interested in being members of the Mozilla organization on GitHub as a way to highlight their contributions to the Mozilla Project. Thanks for your help! And there is a [https://www.mozilla.org/credits/ better place] to highlight your work. Please refer to the [https://www.mozilla.org/credits/FAQ FAQ] for that process.
+Algumas pessoas estão interessadas em se tornar membros da Organização Mozilla no GitHub como uma forma de demonstrar suas contribuições com o Projeto Mozilla. Obrigado pela sua ajuda! E existe um [https://www.mozilla.org/credits/ lugar melhor] para demonstrar seu trabalho. Por favor verifique no [https://www.mozilla.org/credits/FAQ FAQ] sobre este processo.
 
-=== Should I make a separate GitHub organization or just create a repository in an existing one? ===
-This is a personal preference.  If you have a large enough project or organization feel free.  We suggest you use the strategies and recommendations here as a model to manage the details.
+=== Devo criar uma organização separada no GitHub ou somente criar um repositório em uma existente? ===
+Esta é uma decisão pessoal. Se você tem um projeto ou uma organização grande o suficiente, sinta-se livre para escolher. Sugerimos usar as estratégias e recomendações neste documento como modelo para gerenciar os detalhes.
 
-=== Forking vs Transferring ===
-'''Do not "fork" a repository into a Mozilla organization.''' Doing so gives ''every team in the org'' rights to it.
+=== Forking vs Transferência ===
+'''Não "fork" um repositório dentro de uma Organização Mozilla.''' Fazendo isso dá direito a ''todas as equipes na organização'' a fazerem também.
 
-If you have created a repo on your own account (for example, myuser/myrepo) and it should live under the Mozilla organization, here are the steps:
+Se você criou um repositório na sua própria conta (por exemplo, meuusuario/meurepositorio) e isso deveria estar em uma Organização Mozilla, aqui estão os passos para isso:
 
-{{note|As soon as you transfer, your repository will be in "limbo" (only you will have write access) until you get the assistance of an [[#contact|org admin]] who can make the changes. Please plan in advance if timing is critical.}}
+{{note|Assim que você transferir, seu repositório estará no "limbo" (somente você terá acesso de escrita) até que você tenha assistência de um [[#contact|administrador da organização]] que possa realizar as alterações. Por favor planeje com antecedência se o tempo for crítico.}}
 
-# If you're not a member of any team, talk to an [[#contact|org admin]].
-# Under the repo admin, transfer ownership to the Mozilla organization. If you don't see this option, return to step 1.
-# Choose which teams should be given access. All chosen teams will have only 'read' access at this point.
-# Ask an [[#contact|org admin]] to grant team permissions higher than read ('write' and 'admin' are the other choices). (Team maintainers do not have the ability to change a repositories status.)
-# Fork the repo from Mozilla (mozilla/myrepo) back to your account (recreating myuser/myrepo). While the transferred repo becomes the root of the network on GitHub (e.g. all forks are now forks of mozilla/myrepo) other users may be pointing to your repo by URL. (Optional, github will redirect old URLs for transfers, but you probably want a local repo if you use the PR workflow.)
 
-=== Do I need to be an owner to create repositories? ===
-No.  If a person has read/write access to another repository in that organization they can make more repositories in that organization. However, it's preferred that you create repositories in the context of a team.
+# Se vocẽ não é membro de nenhuma equipe, converse com um [[#contact|administrador da organização]].
+# Dentro do repositório administrado, transfira a posse para a Organização Mozilla. Se vocẽ não conseguir ver esta opção, volte para o passo 1.
+# Escolha quais equipes devem ser dadas acesso. Todas as equipes escolhidas terão somente acesso de leitura neste ponto.
+# Peça a um [[#contact|administrador da organização]] para conceder permissões de acesso maior que leitura ('escrita' e 'admin' são outras opções). (Mantenedores de equipes não tem capacidade de mudar o estado de repositórios.)
+# Fork o repositório da Mozilla (mozilla/meurepo) de volta para sua conta (recriando meuusuario/meurepo). Enquanto o repositório transferido se torna a base no GitHub (e.g. todos os forks são agora forks de mozilla/meurepo) outros usuários podem estar apontando para seu repositório pela URL. (Opcional, GitHub irá redirecionar URLs antigas para as transferências, mas você provavelmente deseja um repositório local se quiser usar o fluxo de PR.)
 
-=== Are there requirements for when or how I should create a new team? ===
-No.  When requirements were proposed they all seemed too rigid and time consuming.  Instead we recommend staying flexible and using good naming and documentation for projects (similar to naming CSS classes or variables).
+=== Eu preciso ser um dono para criar repositórios? ===
+Não. Se uma pessoa tem acesso de leitura/escrita a outro repositório naquela organização elas podem criar mais repositórios nesta organização. No entanto, é recomendado que você crie repositório no contexto de equipe.
 
-On large teams we recommend you separate teams for read/write and repository administration.
+=== Existem requisitos para quando ou como eu devo criar uma nova equipe? ===
+Não. Quando requisitos eram propostos eles pareciam muito rígidos e demorados. Em vez disso nós recomendamos manter a flexibilidade e utilização de boas nomeclaturas e documentação para projetos (semelhanças ao nomear classes CSS ou variáveis).
+
+Em grandes equipes recomendamos que você separe equipes para leitura/escrita e administração dos repositórios.
 
 <div id="other_github"></div>
-=== Is "mozilla" the only GitHub "organization" related to Mozilla? ===
-No, there are plenty of Mozilla-related "organizations" on GitHub. As a rule of thumb, initiatives that create a large number of sub-repositories will create their own "organization". Here is a (probably incomplete) list of them:
+=== "mozilla" é a única "organização" no GitHub referente a Mozilla? ===
+Não, existem muitas "organizações" no GitHub relacionadas a Mozilla. Como princípio básico, iniciativas que criam um grande número de sub-repositórios criarão suas próprias "organizações". Aqui está (provavelmente incompleta) uma lista delas:
 {| class="wikitable sortable"
 |-
-! Organization !! Description !! Contact Owner
+! Organização !! Descrição !! Contato do Responsável
 |-
-| [https://github.com/mozilla-it mozilla-it] || Mozilla IT's repositories || ?
+| [https://github.com/mozilla-it mozilla-it] || Repositórios da Mozilla IT || ?
 |-
-| [https://github.com/bugzilla bugzilla] || Bugzilla (the product) || #bteam
+| [https://github.com/bugzilla bugzilla] || Bugzilla (o produto) || #bteam
 |- 
 | [https://github.com/drumbeat-badge-sprint drumbeat-badge-sprint] || Drumbeat Badge Lab || ?
 |-
@@ -98,7 +98,7 @@ No, there are plenty of Mozilla-related "organizations" on GitHub. As a rule of 
 |-
 | [https://github.com/mdn mdn] || Mozilla Developer Network || {{Mozillian|groovecoder|Luke Crouch}}
 |-
-| [https://github.com/mozbrick mozbrick] || Mozilla Brick (web components library) || ?
+| [https://github.com/mozbrick mozbrick] || Mozilla Brick (biblioteca de componentes web) || ?
 |-
 | [https://github.com/mozilla-appmaker mozilla-appmaker] || Mozilla Appmaker || ?
 |-
@@ -106,21 +106,21 @@ No, there are plenty of Mozilla-related "organizations" on GitHub. As a rule of 
 |-
 | [https://github.com/mozilla-bteam mozilla-bteam] || Bugzilla.Mozilla.org || #bteam
 |-
-| [https://github.com/mozilla-cit mozilla-cit] || Mozilla Community Ops || {{Mozillians|tanner|Tanner Filip}} or {{Mozillians|yalam96|Yousef Alam}}
+| [https://github.com/mozilla-cit mozilla-cit] || Operações da Comunidade Mozilla || {{Mozillians|tanner|Tanner Filip}} or {{Mozillians|yalam96|Yousef Alam}}
 |-
-| [https://github.com/mozilla-comm mozilla-comm] || Calendaring and Messaging related projects || ?
+| [https://github.com/mozilla-comm mozilla-comm] || Projetos relacionados a Calendários e Mensagens || ?
 |-
-| [https://github.com/mozilla-cordova mozilla-cordova] || Firefox OS Support for Apache Cordova || ?
+| [https://github.com/mozilla-cordova mozilla-cordova] || Suporte Firefox OS para Apache Cordova || ?
 |-
-| [https://github.com/mozilla-metrics mozilla-metrics] || Mozilla Metrics || ?
+| [https://github.com/mozilla-metrics mozilla-metrics] || Estísticas Mozilla || ?
 |-
-| [https://github.com/mozilla-raptor mozilla-raptor] || Mozilla Raptor / Firefox OS Performance || {{Mozillian|eliperelman|Eli Perelman}}, {{Mozillian|rwood|Rob Wood}}
+| [https://github.com/mozilla-raptor mozilla-raptor] || Desempenho Mozilla Raptor / Firefox OS || {{Mozillian|eliperelman|Eli Perelman}}, {{Mozillian|rwood|Rob Wood}}
 |-
-| [https://github.com/mozilla-releng mozilla-releng] || Mozilla Release Engineering || #releng
+| [https://github.com/mozilla-releng mozilla-releng] || Engenharia de Lançamento Mozilla || #releng
 |-
-| [https://github.com/mozilla-services mozilla-services] || Mozilla Services || [https://github.com/orgs/mozilla-services/people?utf8=%E2%9C%93&query=role%3Aowner mozilla-services owners]
+| [https://github.com/mozilla-services mozilla-services] || Serviços Mozilla || [https://github.com/orgs/mozilla-services/people?utf8=%E2%9C%93&query=role%3Aowner mozilla-services responsável]
 |-
-| [https://github.com/mozilla-svcops mozilla-svcops] || Mozilla Cloud Services Ops || {{Mozillian|relud|Daniel Thornton}}
+| [https://github.com/mozilla-svcops mozilla-svcops] || Operações dos Serviços em Nuvem Mozilla || {{Mozillian|relud|Daniel Thornton}}
 |-
 | [https://github.com/MozillaTW MozillaTW] || Mozilla Taiwan || ?
 |-
@@ -130,46 +130,46 @@ No, there are plenty of Mozilla-related "organizations" on GitHub. As a rule of 
 |-
 | [https://github.com/MozillaScience MozillaScience] || Mozilla Science Lab || ?
 |-
-| [https://github.com/MozillaSecurity MozillaSecurity] || Mozilla Platform Fuzzing Team master repo with many fuzzing tools under it. || ?
+| [https://github.com/MozillaSecurity MozillaSecurity] || Equipe da Plataforma de Fuzzing Mozilla master repo com muitas ferramentas de fuzzing disponíveis. || ?
 |-
 | [https://github.com/MozillaWiki MozillaWiki] || MozillaWiki (wiki.mozilla.org) || {{Mozillian|ckoehler|Christie Koehler}}, {{Mozillian|gphemsley|Gordon P. Hemsley}}
 |-
 | [https://github.com/mozillayvr mozillayvr] || Mozilla Vancouver @MozillaYVR || {{Mozillian|bclark|Brian Clark}}, {{Mozillian|shobson|Stephanie Hobson}}
 |-
-| [https://github.com/mozfr mozfr] || Mozilla Francophone || Pascal Chevrel https://mozillians.org/fr/u/pascalc/
+| [https://github.com/mozfr mozfr] || Mozilla Francófonos (falantes de Francês) || Pascal Chevrel https://mozillians.org/fr/u/pascalc/
 |-
-| [https://github.com/opennews opennews] || Knight-Mozilla OpenNews || ?
+| [https://github.com/opennews opennews] || Novidades Cavaleiros-Mozilla || ?
 |-
-| [https://github.com/rust-lang rust-lang] || The Rust Programming Language || {{Mozillian|aturon|Aaron Turon}}
+| [https://github.com/rust-lang rust-lang] || Linguagem de Programação Rust || {{Mozillian|aturon|Aaron Turon}}
 |-
-| [https://github.com/servo servo] || Servo (browser engine written in Rust) || {{Mozillian|larsberg|Lars Bergstrom}}, Jack Moffitt
+| [https://github.com/servo servo] || Servo (motor do navegador escrito em Rust) || {{Mozillian|larsberg|Lars Bergstrom}}, Jack Moffitt
 |-
-| [https://github.com/tabulapdf tabulapdf] || Tabula project (extract data from PDF files) || ?
+| [https://github.com/tabulapdf tabulapdf] || Projeto Tabula (extração de dados de arquivos PDF) || ?
 |-
-| [https://github.com/webcompat webcompat] || Web Compatibility Team || {{Mozillian|miketaylr|Mike Taylor}}
+| [https://github.com/webcompat webcompat] || Equipe Compatibilidade Web || {{Mozillian|miketaylr|Mike Taylor}}
 |-
-| [https://github.com/mozilla-l10n mozilla-l10n] || Mozilla l10n-drivers team || Pascal Chevrel https://mozillians.org/fr/u/pascalc/
+| [https://github.com/mozilla-l10n mozilla-l10n] || Mozilla l10n-drivers equipe || Pascal Chevrel https://mozillians.org/fr/u/pascalc/
 |-
-| [https://github.com/taskcluster taskcluster] || [[TaskCluster]] Team || {{Mozillian|sdeckelmann|Selena Deckelmann}}
+| [https://github.com/taskcluster taskcluster] || [[TaskCluster]] Equipe || {{Mozillian|sdeckelmann|Selena Deckelmann}}
 |-
 | [https://github.com/MozillaCH MozillaCH] || Mozilla [[Switzerland]] || {{Mozillian|mkohler|Michael Kohler}}, {{Mozillian|freaktechnik|freaktechnik}}
 |}
 
-=== Are there other unofficial or Mozilla-related repositories hosted on Github? ===
-Why, yes! In no particular order:
+=== Existem outros repositórios não-oficiais ou repositórios relacionados a Mozilla no GitHub? ===
+Sim! Sem ordem relacionada:
 
-* [https://github.com/kinetiknz/nestegg/ https://github.com/kinetiknz/nestegg/] :  WebM demuxer
-* [https://github.com/xiph/opus/ https://github.com/xiph/opus/] :  Modern audio compression for the internet.
-* [https://github.com/webmproject/libvpx https://github.com/webmproject/libvpx] :  Mirror only. Please do not send pull requests.
-* [https://github.com/campd/fxdt-adapters https://github.com/campd/fxdt-adapters] :  Firefox Developer Tools protocol adapters
-* [https://github.com/kripken/emscripten https://github.com/kripken/emscripten] :  Emscripten: An LLVM-to-JavaScript Compiler
-* [https://github.com/bbondy/codefirefox https://github.com/bbondy/codefirefox] :  Video and exercise based tutorial site for coding Firefox and other Mozilla related technology
-* [https://github.com/nickdesaulniers/where-is-firefox-os https://github.com/nickdesaulniers/where-is-firefox-os] :  A map showing where in the world Firefox OS phones are being sold.
-* [https://github.com/jdm/bugsahoy https://github.com/jdm/bugsahoy] :  A landing page to make finding relevant bugs easier for new Mozilla contributors.
-* [https://github.com/w3c/web-platform-tests https://github.com/w3c/web-platform-tests] :  Test Suites for Web Platform specifications
-* [https://github.com/w3c/wptserve https://github.com/w3c/wptserve] :  Web server designed for use with web-platform-tests
-* [https://github.com/w3c/wptrunner https://github.com/w3c/wptrunner] : Cross-browser and multi-platform test runner for web-platform-tests.  Used in mozilla-central and servo.
-* [https://github.com/w3c/testharness.js https://github.com/w3c/testharness.js] : (no description)
-* [https://github.com/jdm/asknot https://github.com/jdm/asknot] :  Ask not what Mozilla can do for you but what you can do for Mozilla.
-* [https://github.com/jeffbryner/MozDef https://github.com/jeffbryner/MozDef]: Mozilla Defense Platform.
-* [https://github.com/jgraham/webdriver-rust https://github.com/jgraham/webdriver-rust]: WebDriver library for Rust.
+* [https://github.com/kinetiknz/nestegg/ https://github.com/kinetiknz/nestegg/] :  WebM demultiplexador
+* [https://github.com/xiph/opus/ https://github.com/xiph/opus/] :  Compressão de áudio moderna para internet.
+* [https://github.com/webmproject/libvpx https://github.com/webmproject/libvpx] :  Somente espelho. Por favor não envie _pull requests_.
+* [https://github.com/campd/fxdt-adapters https://github.com/campd/fxdt-adapters] : Adaptadores de Protocolos para as Ferramentas para Desenvolvimento Firefox.
+* [https://github.com/kripken/emscripten https://github.com/kripken/emscripten] :  Emscripten: Um compilador LLVM-para-JavaScript.
+* [https://github.com/bbondy/codefirefox https://github.com/bbondy/codefirefox] :  Site com tutorial em vídeo e exercícios para desenvolver para Firefox e outras tecnologias relacionadas a Mozilla.
+* [https://github.com/nickdesaulniers/where-is-firefox-os https://github.com/nickdesaulniers/where-is-firefox-os] :  Um mapa mostrando onde no mundo os telefones com Firefox OS foram vendidos.
+* [https://github.com/jdm/bugsahoy https://github.com/jdm/bugsahoy] :  Uma página para tornar fácil o descobrimento de _bugs_ relevantes para novos contribuidores Mozilla.
+* [https://github.com/w3c/web-platform-tests https://github.com/w3c/web-platform-tests] :  Suite de teste para especificações de plataformas Web.
+* [https://github.com/w3c/wptserve https://github.com/w3c/wptserve] :  Um servidor Web desenvolvido para o uso com a Plataforma de testes para Web.
+* [https://github.com/w3c/wptrunner https://github.com/w3c/wptrunner] : Executor multi-plataformas de testes para diferentes navegadores para testes de plataformas Web. Utilizado no mozilla-central e servo.
+* [https://github.com/w3c/testharness.js https://github.com/w3c/testharness.js] : (sem descrição)
+* [https://github.com/jdm/asknot https://github.com/jdm/asknot] :  Não pergunte o que a Mozilla pode fazer por você mas o quê você pode fazer pela Mozilla.
+* [https://github.com/jeffbryner/MozDef https://github.com/jeffbryner/MozDef]: Plataforma Mozilla Defense.
+* [https://github.com/jgraham/webdriver-rust https://github.com/jgraham/webdriver-rust]: Biblioteca WebDriver para Rust.
