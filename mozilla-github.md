@@ -1,4 +1,4 @@
-Esta página é especifica sobre [https://github.com/mozilla a organização "mozilla" no GitHub]. Existem outras muitas organizações no GitHub que você pode se interessar, cf. a lista incompleta [[#other_github|below]].
+Esta página é especifica sobre [https://github.com/mozilla a organização "mozilla" no GitHub]. Existem outras muitas organizações no GitHub que você pode se interessar, cf. a lista incompleta [[#other_github|a baixo]].
 <div id="contact">
 {| class="wikitable"
 |-
@@ -45,8 +45,8 @@ Todos os responsáveis '''deverão''' ter ativo 2FA para suas credenciais no Git
 
 === Posso ser um membro da Organização Mozilla? ===
 Com as melhorias recentes do GitHub (2015), nós encorajamos (fortemente) seguir as diretrizes, que recomenda a criação de equipes no GitHub. Lembrando que, todos os membros da [https://github.com/mozilla/ Organização Mozilla no GitHub] concordam em serem vinculados ao [https://www.mozilla.org/en-US/about/governance/policies/commit/requirements/ Requisitos de Acesso para Submissão da Mozilla], como prática.
-* "Colaborador externo": administradores do respositório podem conceder acesso para qualquer usuário que possua uma conta no GitHub como colaboradore externo. "Colaboradores externos" são análogos ao "Nível 1a" de acesso aos repositórios hospedados pela Mozilla.
-* "Membros da equipe": Mantenedores de equipes podem adicionar usuários do GitHub a uma equipe, se eles já forem membros da organização. Se você ainda não é um membro da organização, o administrador da equipe deve [[#contact|requerer sua adição]] a sua equipe, como um atestado. "Membros de equipe" são análogos ao "Nível 2" ou "Nível 3", com a diferença sendo o repositório gerenciado pela equipe.
+* "Colaborador externo": administradores do respositório podem conceder acesso para qualquer usuário que possua uma conta no GitHub como colaborador externo. "Colaboradores externos" são análogos ao "Nível 1a" de acesso aos repositórios hospedados pela Mozilla.
+* "Membros da equipe": Mantedores de equipes podem adicionar usuários do GitHub a uma equipe, se eles já forem membros da organização. Se você ainda não é um membro da organização, o administrador da equipe deve [[#contact|requerer sua adição]] a sua equipe, como um atestado. "Membros de equipe" são análogos ao "Nível 2" ou "Nível 3", com a diferença sendo o repositório gerenciado pela equipe.
 {{note| A partir de 30 de Junho de 2016, todos os membros da Organização Mozilla no GitHub '''DEVEM''' ter [https://help.github.com/articles/about-two-factor-authentication/ 2FA ativo].|lembrete}}
 
 {{note| Contas para automação também devem ter 2FA ativo. Scripts devem utilizar [https://help.github.com/articles/creating-an-access-token-for-command-line-use/ tokens de acesso] com permissões mínimas somente para execução da tarefa.}}
@@ -86,7 +86,7 @@ Não, existem muitas "organizações" no GitHub relacionadas a Mozilla. Como pri
 |-
 ! Organização !! Descrição !! Contato do Responsável
 |-
-| [https://github.com/mozilla-it mozilla-it] || Repositórios da Mozilla IT || ?
+| [https://github.com/mozillabrasil mozillabrasil] || Mozilla Brasil || ?
 |-
 | [https://github.com/bugzilla bugzilla] || Bugzilla (o produto) || #bteam
 |- 
